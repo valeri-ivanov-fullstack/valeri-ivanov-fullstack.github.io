@@ -3,18 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
+    <title>Valeri Ivanov - Developer Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .main {
+            flex: 3;
+            margin-right: 20px;
+        }
+        .sidebar {
+            flex: 1;
+            background: #eee;
+            padding: 10px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 <header>
-    <h1>Welcome to My GitHub Page</h1>
+    <h1>Valeri Ivanov</h1>
+    <p>Full Stack Developer</p>
 </header>
-<main>
-    <p>This is a sample GitHub Pages site.</p>
-</main>
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+<div class="container">
+    <div class="content">
+        <div class="main">
+            <section id="about">
+                <h2>About Me</h2>
+                <p>Welcome to my portfolio. I am a full stack developer with a passion for creating web applications. Here you can find more about my work and projects.</p>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <p>Here are some of my recent projects:</p>
+                <ul>
+                    <li><a href="https://github.com/valeri-ivanov-dev/project1">Project 1</a> - Description of project 1.</li>
+                    <li><a href="https://github.com/valeri-ivanov-dev/project2">Project 2</a> - Description of project 2.</li>
+                    <li><a href="https://github.com/valeri-ivanov-dev/project3">Project 3</a> - Description of project 3.</li>
+                </ul>
+            </section>
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>If you would like to get in touch, please reach out via <a href="mailto:valeri@example.com">email</a>.</p>
+            </section>
+        </div>
+        <div class="sidebar">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="https://github.com/valeri-ivanov-dev">GitHub Profile</a></li>
+                <li><a href="https://linkedin.com/in/valeri-ivanov-dev">LinkedIn Profile</a></li>
+                <li><a href="https://twitter.com/valeri-ivanov-dev">Twitter Profile</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
 <footer>
-    <p>&copy; 2024 My Name</p>
+    <p>&copy; 2024 Valeri Ivanov</p>
 </footer>
 </body>
 </html>
