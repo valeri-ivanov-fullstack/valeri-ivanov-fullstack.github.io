@@ -7,57 +7,118 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Lato', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
+
         header {
-            background: #333;
+            background: #0366d6;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
+
         header h1 {
             margin: 0;
+            font-size: 2.5em;
         }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2em;
+        }
+
         nav {
             display: flex;
             justify-content: center;
-            background: #444;
+            background: #005cc5;
             padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
+
         nav a {
             color: #fff;
             padding: 14px 20px;
             text-decoration: none;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background 0.3s;
         }
+
         nav a:hover {
-            background: #555;
+            background: #0366d6;
         }
+
         .container {
             max-width: 1200px;
             margin: 20px auto;
             padding: 0 20px;
         }
+
         .content {
             display: flex;
             justify-content: space-between;
         }
+
         .main {
             flex: 3;
             margin-right: 20px;
         }
+
         .sidebar {
             flex: 1;
-            background: #eee;
-            padding: 10px;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-radius: 10px;
         }
+
+        .sidebar h2 {
+            font-size: 1.5em;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin: 10px 0;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 700;
+            transition: color 0.3s;
+        }
+
+        .sidebar ul li a:hover {
+            color: #005cc5;
+        }
+
+        section {
+            background: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            font-size: 2em;
+            margin-top: 0;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
-            background: #333;
+            background: #0366d6;
             color: #fff;
         }
     </style>
@@ -90,15 +151,14 @@
             </section>
             <section id="contact">
                 <h2>Contact</h2>
-                <p>If you would like to get in touch, please reach out via <a href="mailto:valeri@example.com">email</a>.</p>
+                <p>If you would like to get in touch, please reach out via <a href="mailto:vivanov.contacts@gmail.com">email</a>.</p>
             </section>
         </div>
         <div class="sidebar">
             <h2>Quick Links</h2>
             <ul>
-                <li><a href="https://github.com/valeri-ivanov-dev">GitHub Profile</a></li>
-                <li><a href="https://linkedin.com/in/valeri-ivanov-dev">LinkedIn Profile</a></li>
-                <li><a href="https://twitter.com/valeri-ivanov-dev">Twitter Profile</a></li>
+                <li><a href="https://github.com/valeri-ivanov-dev"><i class="fab fa-github"></i> GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/valeri-ivanov-3679145/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></li>
             </ul>
         </div>
     </div>
