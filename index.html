@@ -7,18 +7,19 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
         body {
-            font-family: 'Lato', sans-serif;
+            font-family: 'Inter', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #ffffff;
+            color: #24292e;
         }
 
         header {
-            background: #0366d6;
-            color: #fff;
+            background: #24292e;
+            color: #ffffff;
             padding: 20px 0;
             text-align: center;
         }
@@ -36,50 +37,44 @@
         nav {
             display: flex;
             justify-content: center;
-            background: #005cc5;
+            background: #f6f8fa;
             padding: 10px 0;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-bottom: 1px solid #e1e4e8;
         }
 
         nav a {
-            color: #fff;
+            color: #0366d6;
             padding: 14px 20px;
             text-decoration: none;
             margin: 0 10px;
-            border-radius: 5px;
-            transition: background 0.3s;
+            border-radius: 6px;
+            transition: background 0.3s, color 0.3s;
         }
 
         nav a:hover {
-            background: #0366d6;
+            background: #e1e4e8;
+            color: #0366d6;
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 960px;
             margin: 20px auto;
             padding: 0 20px;
-        }
-
-        .content {
             display: flex;
-            justify-content: space-between;
-        }
-
-        .main {
-            flex: 3;
-            margin-right: 20px;
         }
 
         .sidebar {
             flex: 1;
-            background: #fff;
+            background: #f6f8fa;
             padding: 20px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            border-radius: 10px;
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
+            margin-right: 20px;
         }
 
         .sidebar h2 {
             font-size: 1.5em;
+            margin-top: 0;
         }
 
         .sidebar ul {
@@ -94,7 +89,7 @@
         .sidebar ul li a {
             text-decoration: none;
             color: #0366d6;
-            font-weight: 700;
+            font-weight: 600;
             transition: color 0.3s;
         }
 
@@ -102,12 +97,32 @@
             color: #005cc5;
         }
 
+        .photo-placeholder {
+            width: 100%;
+            height: auto;
+            background-color: #e1e4e8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        .photo-placeholder img {
+            max-width: 100%;
+            border-radius: 6px;
+        }
+
+        .main {
+            flex: 3;
+        }
+
         section {
-            background: #fff;
+            background: #ffffff;
             padding: 20px;
             margin-bottom: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border: 1px solid #e1e4e8;
+            border-radius: 6px;
         }
 
         section h2 {
@@ -115,11 +130,32 @@
             margin-top: 0;
         }
 
+        section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section ul li {
+            margin: 10px 0;
+        }
+
+        section ul li a {
+            text-decoration: none;
+            color: #0366d6;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        section ul li a:hover {
+            color: #005cc5;
+        }
+
         footer {
             text-align: center;
             padding: 20px 0;
-            background: #0366d6;
-            color: #fff;
+            background: #f6f8fa;
+            color: #586069;
+            border-top: 1px solid #e1e4e8;
         }
     </style>
 </head>
@@ -134,33 +170,59 @@
     <a href="#contact">Contact</a>
 </nav>
 <div class="container">
-    <div class="content">
-        <div class="main">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>Welcome to my portfolio. I am a full stack developer with a passion for creating web applications. Here you can find more about my work and projects.</p>
-            </section>
-            <section id="projects">
-                <h2>Projects</h2>
-                <p>Here are some of my recent projects:</p>
-                <ul>
-                    <li><a href="https://github.com/valeri-ivanov-dev/project1">Project 1</a> - Description of project 1.</li>
-                    <li><a href="https://github.com/valeri-ivanov-dev/project2">Project 2</a> - Description of project 2.</li>
-                    <li><a href="https://github.com/valeri-ivanov-dev/project3">Project 3</a> - Description of project 3.</li>
-                </ul>
-            </section>
-            <section id="contact">
-                <h2>Contact</h2>
-                <p>If you would like to get in touch, please reach out via <a href="mailto:vivanov.contacts@gmail.com">email</a>.</p>
-            </section>
+    <div class="sidebar">
+        <div class="photo-placeholder">
+            <!-- Option 1: GitHub Profile Photo -->
+            <img src="https://avatars.githubusercontent.com/valeri-ivanov-fullstack" alt="Valeri Ivanov">
+            <!-- Option 2: Image from GitHub Pages Repository -->
+            <!-- <img src="https://raw.githubusercontent.com/valeri-ivanov-dev/portfolio/main/profile.jpg" alt="Valeri Ivanov"> -->
         </div>
-        <div class="sidebar">
-            <h2>Quick Links</h2>
-            <ul>
-                <li><a href="https://github.com/valeri-ivanov-dev"><i class="fab fa-github"></i> GitHub Profile</a></li>
-                <li><a href="https://www.linkedin.com/in/valeri-ivanov-3679145/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></li>
-            </ul>
-        </div>
+        <h2>Quick Links</h2>
+        <ul>
+            <li><a href="https://github.com/valeri-ivanov-fullstack"><i class="fab fa-github"></i> GitHub Profile</a></li>
+            <li><a href="https://www.linkedin.com/in/valeri-ivanov-3679145/"><i class="fab fa-linkedin"></i> LinkedIn Profile</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <section id="about">git
+            <h2>About Me</h2>
+            <p>
+                Welcome to my portfolio. I am a full stack developer with extensive experience in building dynamic and responsive web applications. My expertise spans both frontend and backend technologies, ensuring seamless integration and performance.
+            </p>
+            <p>
+                On the frontend, I have a strong proficiency in Angular and React.js, crafting interactive and user-friendly interfaces. These frameworks enable me to deliver robust and maintainable code that enhances user experience.
+            </p>
+            <p>
+                My backend skills are centered around Spring Boot and Microservices architecture, where I design and implement scalable and efficient backend solutions. This includes developing RESTful APIs, ensuring security, and optimizing performance.
+            </p>
+            <p>
+                I am well-versed in database management with hands-on experience in PostgreSQL and MongoDB. My projects often leverage these databases for efficient data storage, retrieval, and management, ensuring data integrity and availability.
+            </p>
+            <p>
+                Additionally, I have substantial experience with Docker, enabling containerization of applications for consistent environments across development, testing, and production stages.
+            </p>
+            <p>
+                My cloud experience includes deploying and managing applications on AWS and Google Cloud. I utilize cloud services to enhance application scalability, reliability, and performance, leveraging the full potential of cloud computing.
+            </p>
+            <p>
+                Looking to the future, I am planning to expand my skill set by integrating TensorFlow Java for machine learning applications, Apache Kafka for real-time data streaming, and Spring Cloud frameworks for building distributed systems and microservices. These technologies will further enhance my ability to develop cutting-edge solutions and stay at the forefront of technological advancements.
+            </p>
+            <p>
+                Here, you can find more about my work and projects, showcasing my technical skills and the solutions I have developed.
+            </p>
+        </section>
+
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>
+                In my portfolio, I showcase a variety of projects that demonstrate my skills and expertise in both frontend and backend development. I am currently working on a series of small demo variants for individual front-end and back-end components. These demos will highlight my ability to create modular and scalable parts that can be seamlessly integrated into a unified platform.
+            </p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>If you would like to get in touch, please reach out via <a href="mailto:vivanov.contacts@gmail.com">email</a>.</p>
+        </section>
     </div>
 </div>
 <footer>
