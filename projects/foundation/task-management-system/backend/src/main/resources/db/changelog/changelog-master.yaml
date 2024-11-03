@@ -1,0 +1,12 @@
+databaseChangeLog:
+  - include:
+      file: "schema/v1.0/v1_0__init_schema.yaml"
+      relativeToChangelogFile: true
+
+  - include:
+      file: "data/v1.0/v1_0__insert_initial_data.yaml"
+      relativeToChangelogFile: true
+
+  # - include:
+  #     file: "data/v1.0/v1_0_1__add_columns_task_user.xml"
+  #     relativeToChangelogFile: true

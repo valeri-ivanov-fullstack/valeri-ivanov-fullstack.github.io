@@ -1,0 +1,30 @@
+# application-dev.yaml
+
+# DataSource configuration for local development
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/portfolio_task_management_system
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  # Hibernate Dialect for PostgreSQL
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true  # Enable SQL logging for development
+
+# JWT configuration
+jwt:
+  secret: CZXO2xoMOHkHqcDB2H7TwQlaqft/A7XRXIed05imxoE/qFNgwZgl0wUDoMIny+CCmh+TcJwaINJ/+D0kCqJzhA==
+  expirationMs: 86400000
+
+# Logging settings
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE

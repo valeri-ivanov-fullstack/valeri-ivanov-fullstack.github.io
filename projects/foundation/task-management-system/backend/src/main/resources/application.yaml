@@ -1,0 +1,28 @@
+# application.yaml
+
+# Common Application Properties
+spring:
+  application:
+    name: task-management-system
+  profiles:
+    active: dev  # Default profile; change to "qa" or "prod" as needed
+
+  # Hibernate JPA settings
+  jpa:
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+    hibernate:
+      ddl-auto: none  # We rely on Liquibase for database schema management
+    show-sql: true
+
+  # Liquibase configuration
+  liquibase:
+    change-log: classpath:db/changelog/changelog-master.yaml
+    enabled: true
+
+  # Server settings
+  server:
+    port: 8080

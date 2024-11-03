@@ -1,0 +1,86 @@
+databaseChangeLog:
+  - changeSet:
+      id: "4"
+      author: "valeri.ivanov"
+      changes:
+        - insert:
+            tableName: "roles"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "name"
+                  value: "ADMIN"
+        - insert:
+            tableName: "roles"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "name"
+                  value: "USER"
+
+  - changeSet:
+      id: "5"
+      author: "valeri.ivanov"
+      changes:
+        - insert:
+            tableName: "users"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 1
+              - column:
+                  name: "username"
+                  value: "admin"
+              # TODO: Replace `hashed_password` with a real hashed password
+              - column:
+                  name: "password"
+                  value: "hashed_password"
+        - insert:
+            tableName: "users"
+            columns:
+              - column:
+                  name: "id"
+                  valueNumeric: 2
+              - column:
+                  name: "username"
+                  value: "user"
+              # TODO: Replace `hashed_password` with a real hashed password
+              - column:
+                  name: "password"
+                  value: "hashed_password"
+
+  - changeSet:
+      id: "6"
+      author: "valeri.ivanov"
+      changes:
+        - insert:
+            tableName: "user_roles"
+            columns:
+              - column:
+                  name: "user_id"
+                  valueNumeric: 1
+              - column:
+                  name: "role_id"
+                  valueNumeric: 1
+        - insert:
+            tableName: "user_roles"
+            columns:
+              - column:
+                  name: "user_id"
+                  valueNumeric: 1
+              - column:
+                  name: "role_id"
+                  valueNumeric: 2
+        - insert:
+            tableName: "user_roles"
+            columns:
+              - column:
+                  name: "user_id"
+                  valueNumeric: 2
+              - column:
+                  name: "role_id"
+                  valueNumeric: 2
